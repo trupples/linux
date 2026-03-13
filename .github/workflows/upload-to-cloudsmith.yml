@@ -10,6 +10,10 @@ on:
         required: false
         default: ${{ vars.CLOUDSMITH_REPOSITORY }}
         type: string
+      version:
+        required: false
+        default: ${{ github.sha }}
+        type: string
     secrets:
       CLOUDSMITH_SERVICE_SLUG:
         required: false
@@ -157,5 +161,5 @@ jobs:
                                $package_file \
                                $file \
                                "$tags_" \
-                               ${GITHUB_SHA:0:12}
+                               ${{ inputs.version }}
         done
