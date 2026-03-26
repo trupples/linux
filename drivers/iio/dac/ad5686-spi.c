@@ -97,6 +97,7 @@ static int ad5686_spi_probe(struct spi_device *spi)
 
 static const struct spi_device_id ad5686_spi_id[] = {
 	{"ad5310r", ID_AD5310R},
+	{"ad5313r", ID_AD5338R}, /* spi-variant of ad5338r */
 	{"ad5672r", ID_AD5672R},
 	{"ad5674r", ID_AD5674R},
 	{"ad5676", ID_AD5676},
