@@ -14,6 +14,7 @@ properties:
   compatible:
     enum:
       - adi,ad5310r
+      - adi,ad5313r
       - adi,ad5672r
       - adi,ad5674r
       - adi,ad5676
